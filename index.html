@@ -17,13 +17,25 @@
     border-style: solid;
     border-radius: 50%;
   }
+  .float {
+    float: left;
+    margin-right: 5px;
+  }
+  .clearfix {
+    *zoom:1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
 </style>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Menu 1</a></li>
-  <li><a href="#">Menu 2</a></li>
-  <li><a href="#">Menu 3</a></li>
-</ul>
+
 <div class="clearfix float">
 <img width="150px" height="75px" src="http://assets1.ignimgs.com/thumbs/userUploaded/2015/11/6/lol-world-championship-highlights1280-1446852934029_large.jpg" class="img-circle">
  <div>Fanpage</div>
